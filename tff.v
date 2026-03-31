@@ -11,7 +11,7 @@ module tff(
 
     assign D = (T & current_qnot) | (~T & current_q);
 
-    d_flip_flop dff_t(
+    dff dff_tff(
         .D(D),
         .clk(clk),
         .Q(current_q),
