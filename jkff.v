@@ -12,7 +12,7 @@ module jkff(
 
     assign D = (J & current_qnot) | (~K & current_q);
 
-    dff dff_jkff(
+    dff_jkff(
         .D(D),
         .clk(clk),
         .Q(current_q),
